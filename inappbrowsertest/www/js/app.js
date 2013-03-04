@@ -57,6 +57,13 @@ function errorHandler (error) {
 $(document).on('pageinit',"body",function()
                {
                     detailed_div=$("div#detailed ul");
+               
+               if (navigator.userAgent.indexOf("Android") != -1)
+               {
+               $.mobile.defaultPageTransition = 'none';
+               $.mobile.defaultDialogTransition = 'none';
+               $("a").attr("data-transition", "none");
+               }
                     
                
                });
