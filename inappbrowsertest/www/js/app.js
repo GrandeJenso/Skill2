@@ -9,7 +9,6 @@ var pushNotification;
 
 function onLoad() {
     document.addEventListener('deviceready', onDeviceReady, true);
-    if (navigator.userAgent.indexOf("Android") != -1) { $.mobile.defaultPageTransition = 'none'; $.mobile.defaultDialogTransition = 'none'; }
     
 }
 
