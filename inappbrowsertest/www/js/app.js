@@ -58,9 +58,16 @@ $(document).on('pageinit', "#one", function()
 //                                });
                   
                   $('li.listelement').live("click", function(){
+
                                            detailed_div.text("");
                                            jobID = $(this).data('id');
+                                           if (device.platform == 'android' || device.platform == 'Android') {
+                                           $.mobile.changePage( "#two");
+                                           
+                                           } else {
                                            $.mobile.changePage("#two", {transition:"slide"} , true, true);
+                                           }
+                                           
                                            //$.mobile.loading('show');
                                            
                                            

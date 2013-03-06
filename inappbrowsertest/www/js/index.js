@@ -37,7 +37,6 @@ onDeviceReady: function() {
 },
 tokenHandler:function(msg) {
     console.log("Token Handler " + msg);
-    alert(msg);
 },
 errorHandler:function(error) {
     console.log("Error Handler  " + error);
