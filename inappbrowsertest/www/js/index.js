@@ -41,7 +41,7 @@ tokenHandler:function(msg) {
 },
 errorHandler:function(error) {
     console.log("Error Handler  " + error);
-    alert(error);
+    alert("hej"+error);
 },
     // result contains any message sent from the plugin call
 successHandler: function(result) {
