@@ -5,54 +5,6 @@ var startApp = function() {
     var detailed_div;
 
 };
-var pushNotification;
-
-function onLoad() {
-    document.addEventListener('deviceready', onDeviceReady, true);
-    
-}
-
-function onDeviceReady() {
-    pushNotification = window.plugins.pushNotification;
-    
-    if (device.platform == 'android' || device.platform == 'Android') {
-        pushNotification.register(successHandler, errorHandler,
-                                  {"senderID":"661780372179","ecb":"onNotificationGCM"});
-    } else {
-        
-        pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"false","alert":"true","ecb":"onNotificationAPN"});
-    }
-}
-
-// handle APNS notifications for iOS
-function onNotificationAPN(event) {
-    if (event.alert) {
-        navigator.notification.alert(event.alert);
-    }
-    
-    if (event.sound) {
-        var snd = new Media(event.sound);
-        snd.play();
-    }
-    
-    if (event.badge) {
-        pushNotification.setApplicationIconBadgeNumber(successHandler, event.badge);
-    }
-}
-
-function tokenHandler (result) {
-    alert(result);
-    // Your iOS push server needs to know the token before it can push to this device
-    // here is where you might want to send it the token for later use.
-}
-
-function successHandler (result) {
-    alert(result);
-}
-
-function errorHandler (error) {
-    alert(result);
-}
 
 $(document).on('pageinit',"body",function()
                {
