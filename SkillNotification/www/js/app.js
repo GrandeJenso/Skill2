@@ -4,12 +4,13 @@ var startApp = function() {
     var xml_all;
     var detailed_div;
 
+
 };
 
 $(document).on('pageinit',"body",function()
                {
                     detailed_div=$("div#detailed ul");
-                    
+               
                
                });
 

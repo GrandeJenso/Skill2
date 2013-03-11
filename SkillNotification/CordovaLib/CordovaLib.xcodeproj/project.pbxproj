@@ -520,6 +520,7 @@
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lena Miranda (EELTMCW9BS)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -533,6 +534,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = Cordova;
+				PROVISIONING_PROFILE = "38D60D47-F219-4838-BE60-14BF7ABDBC4A";
 				PUBLIC_HEADERS_FOLDER_PATH = include/Cordova;
 				SKIP_INSTALL = YES;
 			};
@@ -549,6 +551,7 @@
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lena Miranda (EELTMCW9BS)";
 				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -559,6 +562,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = Cordova;
+				PROVISIONING_PROFILE = "38D60D47-F219-4838-BE60-14BF7ABDBC4A";
 				PUBLIC_HEADERS_FOLDER_PATH = include/Cordova;
 				SKIP_INSTALL = YES;
 			};
@@ -573,7 +577,6 @@
 					armv7s,
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Lena Miranda (EELTMCW9BS)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
@@ -584,7 +587,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DDEBUG";
-				PROVISIONING_PROFILE = "38D60D47-F219-4838-BE60-14BF7ABDBC4A";
 				PUBLIC_HEADERS_FOLDER_PATH = include/Cordova;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -603,7 +605,6 @@
 					armv7s,
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Lena Miranda (EELTMCW9BS)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_THUMB_SUPPORT = NO;
@@ -612,7 +613,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
-				PROVISIONING_PROFILE = "38D60D47-F219-4838-BE60-14BF7ABDBC4A";
 				PUBLIC_HEADERS_FOLDER_PATH = include/Cordova;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

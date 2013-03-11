@@ -41,8 +41,8 @@
 		30A0434814DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434314DC770100060A13 /* Localizable.strings */; };
 		30A0434914DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434614DC770100060A13 /* Localizable.strings */; };
 		30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E5649113A7FCAF007403D8 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		7705F21B16E38E62007A5BED /* AppDelegate+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 7705F21A16E38E62007A5BED /* AppDelegate+notification.m */; };
-		7705F21E16E38E75007A5BED /* PushPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7705F21D16E38E75007A5BED /* PushPlugin.m */; };
+		7701888B16E78E66007D2F03 /* AppDelegate+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 7701888816E78E66007D2F03 /* AppDelegate+notification.m */; };
+		7701888C16E78E66007D2F03 /* PushPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7701888A16E78E66007D2F03 /* PushPlugin.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 /* End PBXBuildFile section */
@@ -103,10 +103,10 @@
 		30A0434714DC770100060A13 /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = Localizable.strings; sourceTree = "<group>"; };
 		30E5649113A7FCAF007403D8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* skill-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "skill-Prefix.pch"; sourceTree = "<group>"; };
-		7705F21916E38E62007A5BED /* AppDelegate+notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+notification.h"; sourceTree = "<group>"; };
-		7705F21A16E38E62007A5BED /* AppDelegate+notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+notification.m"; sourceTree = "<group>"; };
-		7705F21C16E38E75007A5BED /* PushPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushPlugin.h; sourceTree = "<group>"; };
-		7705F21D16E38E75007A5BED /* PushPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushPlugin.m; sourceTree = "<group>"; };
+		7701888716E78E66007D2F03 /* AppDelegate+notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+notification.h"; sourceTree = "<group>"; };
+		7701888816E78E66007D2F03 /* AppDelegate+notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+notification.m"; sourceTree = "<group>"; };
+		7701888916E78E66007D2F03 /* PushPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushPlugin.h; sourceTree = "<group>"; };
+		7701888A16E78E66007D2F03 /* PushPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushPlugin.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* skill-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "skill-Info.plist"; path = "../skill-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = skill/config.xml; sourceTree = "<group>"; };
@@ -185,8 +185,8 @@
 				307C750510C5A3420062BCA9 /* Plugins */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
-				19C28FACFE9D520D11CA2CBB /* Products */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -249,10 +249,10 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				7705F21916E38E62007A5BED /* AppDelegate+notification.h */,
-				7705F21A16E38E62007A5BED /* AppDelegate+notification.m */,
-				7705F21C16E38E75007A5BED /* PushPlugin.h */,
-				7705F21D16E38E75007A5BED /* PushPlugin.m */,
+				7701888716E78E66007D2F03 /* AppDelegate+notification.h */,
+				7701888816E78E66007D2F03 /* AppDelegate+notification.m */,
+				7701888916E78E66007D2F03 /* PushPlugin.h */,
+				7701888A16E78E66007D2F03 /* PushPlugin.m */,
 			);
 			name = Plugins;
 			path = skill/Plugins;
@@ -420,8 +420,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				7705F21B16E38E62007A5BED /* AppDelegate+notification.m in Sources */,
-				7705F21E16E38E75007A5BED /* PushPlugin.m in Sources */,
+				7701888B16E78E66007D2F03 /* AppDelegate+notification.m in Sources */,
+				7701888C16E78E66007D2F03 /* PushPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
